@@ -63,7 +63,7 @@ public class WSDLService {
             sys, SystemInfoPortType.class, SYSTEM_ENDPOINT);
     public static PortWrapper<SystemTimePortType, SystemService> sysTime = new PortWrapper<SystemTimePortType, SystemService>(
             sys, SystemTimePortType.class, SYSTEM_ENDPOINT);
-
+    // new restful web services
     //hotel ports
     public static PortWrapper<HotelReservationServicePortType, HotelService> hotelReserve = new PortWrapper<HotelReservationServicePortType, HotelService>(
             hotel, HotelReservationServicePortType.class, HOTEL_ENDPOINT);

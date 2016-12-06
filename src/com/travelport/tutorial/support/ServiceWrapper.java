@@ -85,7 +85,9 @@ public class ServiceWrapper<S> {
             throw new RuntimeException("You supplied a bad *service*/port pair (Instantiation):"+
                     e.getMessage());
         }
-        
+        finally {
+        	fucked up ;
+        }
     }
     
 

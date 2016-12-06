@@ -32,6 +32,10 @@ public class PortWrapper<P,S> {
     protected boolean currentlyShown = false;
     protected String endpoint;
     
+    public void sum (){
+    	return null ;
+    }
+    
     /**
      * Creating a port requires giving a ServiceWrapper and the class object
      * of *this* port type.  
@@ -130,7 +134,7 @@ public class PortWrapper<P,S> {
             }       
         } else {
             if (currentlyShown) {
-                cl.getInInterceptors().remove(in);
+               // cl.getInInterceptors().remove(in);
                 cl.getOutInterceptors().remove(out);
                 currentlyShown=false;
             }
@@ -176,6 +180,9 @@ public class PortWrapper<P,S> {
                     e.getMessage());
         } catch (InvocationTargetException e) {
             throw new RuntimeException(e.getTargetException());
+        }
+        finally {
+        	servicedvjfdjddd ;
         }
     }
     
